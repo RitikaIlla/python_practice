@@ -1,0 +1,15 @@
+def compare_triplets():
+	a_score = 0
+	b_score = 0
+	a = list(map(int,input("enter a list:").strip().split()))
+	b = list(map(int,input("enter a list:").strip().split()))
+	for i,j in zip(a,b):
+		if i < j: 
+			b_score += 1
+		elif i > j:
+			a_score +=1
+		
+	print('{}' '{}'.format(a_score,b_score))
+compare_triplets()
+
+

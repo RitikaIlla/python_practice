@@ -1,0 +1,20 @@
+def simple_array_sum():
+
+	ar_count = int(input("Enter the total count of number:"))
+	ar = list(map(int, input("Enter a list of numbers:").rstrip().split()))
+		
+	if (ar_count) == len(ar):
+		sum1 = 0
+		for each in ar:
+			sum1 += int (each)
+		return sum1
+	else:
+		print("list of the numbers provided is more or less than the count provided")
+
+		print(ar_count) 
+
+result = simple_array_sum()
+print(result)
+
+
+

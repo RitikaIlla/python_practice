@@ -1,0 +1,12 @@
+def diagonal_difference(arr,n):
+	lh_diag = 0
+	rh_diag = 0
+	for i in range(len(arr)):
+		if i%(n+1)==0:
+			rh_diag += arr[i]
+		if i%(n-1)==0 and i < len(arr)-1:
+			lh_diag += arr[i]
+	print("lh_diag: " , lh_diag)
+	print("rh_diag : " , rh_diag)
+	print("Absolute difference between the sums of the matrix's two diagonals as a single integer {}" .format(abs(lh_diag-rh_diag)))
+diagonal_difference([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], 4)
